@@ -14,6 +14,11 @@ return new class extends Migration
         Schema::create('youtubeurs', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('nom');
+            $table->string('role');
+            $table->text('description')->nullable();
+            $table->string('image')->nullable();
+
         });
     }
 
