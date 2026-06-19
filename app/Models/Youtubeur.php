@@ -4,7 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Youtubeurs extends Model
+class Youtubeur extends Model
 {
-    protected $fillable =  ['nom','role','description','image'];
+    protected $table = 'Youtubeurs'; 
+    protected $fillable = ['nom', 'role', 'description', 'image'];
 }
