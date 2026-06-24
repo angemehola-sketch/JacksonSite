@@ -15,6 +15,7 @@
     <div class="membres-grid">
         @forelse($youtubeurs as $youtubeur)
             <a href="/youtubeurs/{{ $youtubeur->id }}" class="carte-membre">
+                 <img src="{{ $youtubeur->image }}" alt="{{ $youtubeur->nom }}">
                 <h3>{{ $youtubeur->nom }}</h3>
                 <p class="role">{{ $youtubeur->role }}</p>
                 <p>{{ $youtubeur->description }}</p>
