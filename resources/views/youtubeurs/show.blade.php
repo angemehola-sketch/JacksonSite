@@ -6,6 +6,7 @@
 
 @section('content')
     <div class="membre-detail">
+        <img src="{{ $youtubeur->image }}" alt="{{ $youtubeur->nom }}">
         <h1>{{ $youtubeur->nom }}</h1>
         <p class="role">{{ $youtubeur->role }}</p>
         <p>{{ $youtubeur->description }}</p>
