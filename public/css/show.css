@@ -1,0 +1,47 @@
+.membre-detail {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+}
+
+.membre-detail img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.membre-detail h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.membre-detail .role {
+    color: #706f6c;
+    margin-bottom: 16px;
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.actions a {
+    text-decoration: none;
+    color: #1b1b18;
+}
+
+.actions button {
+    background-color: #e53e3e;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
