@@ -5,17 +5,18 @@
 @endsection
 
 @section('content')
-    <header>
-        <h1>Les Jacksons</h1>
-        <p>Un collectif français réunissant plusieurs créateurs et youtubeurs autour de diverses passions communes.</p>
-    </header>
+   <header>
+    <img src="{{ asset('images/collectif.png') }}" alt="Les Jacksons">
+    <h1>Les Jacksons</h1>
+    <p>Un collectif français réunissant plusieurs créateurs et youtubeurs autour de diverses passions communes.</p>
+</header>
 
     <h2>Membres du collectif</h2>
 
     <div class="membres-grid">
         @forelse($youtubeurs as $youtubeur)
             <a href="/youtubeurs/{{ $youtubeur->id }}" class="carte-membre">
-                 <img src="{{ $youtubeur->image }}" alt="{{ $youtubeur->nom }}">
+                 <img src="{{ asset($youtubeur->image) }}" alt="{{ $youtubeur->nom }}">
                 <h3>{{ $youtubeur->nom }}</h3>
                 <p class="role">{{ $youtubeur->role }}</p>
                 <p>{{ $youtubeur->description }}</p>

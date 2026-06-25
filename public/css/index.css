@@ -55,8 +55,18 @@ h2 {
     margin-bottom: 6px;
 }
 
-.carte-membre .role {
-    color: #706f6c;
-    font-size: 0.9rem;
-    margin-bottom: 8px;
+.carte-membre img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+header img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
