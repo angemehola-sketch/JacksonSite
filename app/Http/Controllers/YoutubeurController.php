@@ -30,13 +30,15 @@ class YoutubeurController extends Controller
             'nom'         => 'required|min:2',
             'role'        => 'required|min:2',
             'description' => 'required|min:5',
+            'image'       => 'string|nullable'
         ]);
 
         Youtubeur::create([
             'nom'         => $request->nom,
             'role'        => $request->role,
             'description' => $request->description,
-        ]);
+            'image'       => $request->image
+        ]); 
 
         return redirect('/youtubeurs');
     }
@@ -55,6 +57,7 @@ class YoutubeurController extends Controller
             'nom'         => 'required|min:2',
             'role'        => 'required|min:2',
             'description' => 'required|min:5',
+            'image'       => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048'
         ]);
 
         $youtubeur->update($request->all());
