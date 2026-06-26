@@ -13,6 +13,7 @@
 
         <div class="actions">
             <a href="/youtubeurs">← Retour</a>
+            <a href="/youtubeurs/{{ $youtubeur->id }}/edit">Modifier</a>
 
             <form action="/youtubeurs/{{ $youtubeur->id }}" method="POST">
                 @csrf

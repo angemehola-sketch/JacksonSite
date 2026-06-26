@@ -41,6 +41,27 @@ class YoutubeurController extends Controller
         return redirect('/youtubeurs');
     }
 
+    public function edit($id)
+    {
+        $youtubeur = Youtubeur::findOrFail($id);
+        return view('youtubeurs.edit', compact('youtubeur'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $youtubeur = Youtubeur::findOrFail($id);
+
+        $request->validate([
+            'nom'         => 'required|min:2',
+            'role'        => 'required|min:2',
+            'description' => 'required|min:5',
+        ]);
+
+        $youtubeur->update($request->all());
+
+        return redirect('/youtubeurs/' . $id);
+    }
+
     public function destroy($id)
     {
         $youtubeur = Youtubeur::findOrFail($id);
