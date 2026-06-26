@@ -6,8 +6,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #1b1b18;
+    background: linear-gradient(
+        135deg,
+        #f4eaf1,
+        #f7f1f6,
+        #faf6ee
+    );
+    color: #2f2f2f;
 }
 
 nav {
