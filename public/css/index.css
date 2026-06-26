@@ -70,3 +70,103 @@ header img {
     border-radius: 50%;
     margin-bottom: 20px;
 }
+show
+.membre-detail {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+}
+
+.membre-detail img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.membre-detail h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.membre-detail .role {
+    color: #706f6c;
+    margin-bottom: 16px;
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.actions a {
+    text-decoration: none;
+    color: #1b1b18;
+}
+
+.actions button {
+    background-color: #e53e3e;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+create
+h1 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+}
+
+form {
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+}
+
+form div {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.actions a {
+    text-decoration: none;
+    color: #1b1b18;
+}
+
+button[type="submit"] {
+    background-color: #1b1b18;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
