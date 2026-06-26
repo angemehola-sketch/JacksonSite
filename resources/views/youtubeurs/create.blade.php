@@ -22,6 +22,10 @@
             <label for="nom">Nom</label>
             <input type="text" id="nom" name="nom" value="{{ old('nom') }}">
         </div>
+          <div>
+            <label for="image">Image</label>
+            <input type="text" id="image" name="image" value="{{ old('image') }}">
+        </div>
 
         <div>
             <label for="role">Rôle</label>
