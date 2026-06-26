@@ -4,7 +4,10 @@ h1 {
 }
 
 form {
-    max-width: 600px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
     background-color: #fff;
     border-radius: 10px;
     padding: 30px;
@@ -42,6 +45,7 @@ input, textarea {
 }
 
 button[type="submit"] {
+    float: right;
     background-color: #1b1b18;
     color: white;
     border: none;
