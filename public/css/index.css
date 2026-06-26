@@ -35,7 +35,12 @@ h2 {
     text-decoration: none;
     color: #1b1b18;
     border: 1px solid #e0e0e0;
-    transition: opacity 0.2s;
+    
+ transition: all 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  &:hover {
+    transform: scale(1.02);
+  }
+
 }
 
 .carte-membre:hover {
